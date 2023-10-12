@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root
+{
+    --cor1:white;
+    --cor2:whitesmoke;
+    --cor3:#4BA29A;
+    --cor4:#FFB2AA;
+    --cor5:#D7F1EA;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body
+{
+    background-color:  var(--cor5);
+}
+
+
+header
+{
+    text-align: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 100px;
+    min-width: 318px;
+
+    background-color: var(--cor3);
+
+    border: solid black 1px;
+}
+
+header h1
+{
+    color: var(--cor4);
+    letter-spacing: 2px;
+}
+
+header a
+{
+    color: var(--cor4);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+header a:hover
+{
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+
+.conteudo
+{
+
+    min-width: 318px;
+    max-width: 700px;
+
+    min-height: 400px;
+    max-height: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+
+    background-color: white;
+
+    border: solid black 1px;
+
+}
+
+article
+{
+    max-width: 500px;
+
+
+    margin:  auto;
+}
+
+
+#info p
+{
+
+    font-size: 16px;
+    max-width: 350px;
+
+
+
+    margin: 10px auto;
+    text-align: justify;
+    
+}
+
+#info h2 , h3
+{
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#info table
+{
+
+    margin: 10px auto;
+    border: solid black 1px;
+}
+
+
+#info table tr
+{
+    text-align: center;
+    
+    margin: 2px;
+}
+
+#info table td
+{
+    border: solid black 1px;
+    padding: 10px;
+}
+
+thead
+{
+    background-color: red;
+}
+
+.conteudo ul 
+{
+    
+    text-align: left;
+    margin: 40px;
+    line-height: 25px;
+}
+
+.conteudo ul li a
+{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.conteudo ul li a:hover 
+{
+    text-decoration: underline;
+}
+
+aside
+{
+    background-color: whitesmoke;
+    border-radius: 1px;
+}
+
+
+#tabela
+{
+    margin: 50px auto;
+    border-style: solid ;
+    border-color: black;
+    border-width: 1px;
+    
+    display: flex;
+    min-width: 445px;
+    text-align: center;
+}
+
+#caixa
+{
+    margin: 50px auto;
+    border-style: solid ;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    font-size: 1.5em;
+
+    display: flex;
+    width: 300px;
+    justify-content: center;
+   
+}
+
+.elemento
+{
+    display: inline-flex;
+    width: 100%;
+
+    color: black;
+
+    justify-content: center;
+    line-height: 30px;
+    padding: 10px;
+
+}
+
+/* Calculadora v2 */
+#separador
+{
+
+    padding: 10px;
+    margin: 30px 0px;
+}
+
+
+#operacao
+{
+    background-color: rgb(216, 216, 216);
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.numero
+{
+    background-color: white;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 2px;
+}
+
+
+
+#txt_n1, #txt_n2
+{
+    width: 30px;
+    height: 30px;
+    
+}
+
+
+
+
+/**/
+
+
+/* Para Emprestimo*/
+
+#gold
+{
+ 
+
+    max-width: 500px;
+    padding: 50px;
+
+    max-height: 100%;
+    
+    margin: auto;
+}
+
+#item
+{
+    min-width: 200px;
+    min-height: 50px;
+    border: solid black 1px;
+
+    margin: 10px;
+    padding: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+    text-align: center;
+}
+
+#item input
+{
+    text-align: center;
+    padding: 5px;
+    border: solid black 1px;
+}
+
+#item #z
+{
+
+    max-width: 75px;
+    height: 35px;
+    margin: auto;
+}
+
+#item #z:hover
+{
+    background-color: rgb(209, 209, 209);
+}
+
+#a
+{
+
+    max-width: 300px;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+}
+
+/**/
+
+/* Tabuada*/
+
+#tabuada
+{
+
+    width: 500px;
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    flex-direction: column;
+}
+
+#numero
+{
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#b
+{
+
+    width: 500px;
+    display: flex;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+#b input
+{
+    width: 50px;
+    margin: 10px;
+}
+
+
+/**/
+
+/*Calculadora v3*/
+
+.calculadora
+{
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-auto-rows: 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px;
+
+    margin: 20px auto;
+    width: 60%;
+}
+
+.celula
+{
+    /* background-color: rgba(255, 0, 0, 0.404); */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+
+.celula:hover 
+{
+    background-color: rgba(255, 255, 0, 0.527);
+}
+
+.h-1
+{
+    grid-row: span 1;
+}
+
+.h-2 
+{
+    grid-row: span 2;
+}
+
+.w-1
+{
+    grid-column: span 1;
+}
+
+.w-2
+{
+    grid-column: span 2;
+}
+
+.w-3
+{
+    grid-column: span 3;
+}
+
+
+/**/
+
+
+/* CARDS CSS */
+
+.cardsList
+{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardOpt
+{
+    /* background-color: blue; */
+    width: 210px;
+    height: 320px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardOpt h2 
+{
+    font-size: 1.3em;
+    
+}
+
+.cardOpt p 
+{
+    /* background-color: green; */
+    height: 50%;
+    margin: 0px 10px;
+    font-size: 0.8em;
+}

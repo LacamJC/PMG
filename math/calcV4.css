@@ -1,0 +1,59 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(5, 33%);
+    gap: 5px;
+    width: 150px;
+    height: 150px;
+    margin: 200px auto;
+    
+    
+    /* border: 1px solid black; */
+    
+
+}
+
+.celula
+{
+    background-color: salmon;
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.r1
+{
+    grid-row: span 1;
+}
+
+.r2
+{
+    grid-row: span 2;
+}
+
+.h1
+{
+    grid-column: span 1;
+}
+
+.h2
+{
+    grid-column: span 2;
+}
+
+.h3
+{
+    grid-column: span 3;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprestimo </title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Aprovação de Empréstimo</h1>
+        <a href="../index.html">home</a>
+    </header>
+
+    <div class="conteudo">
+        <div id="gold">
+            <div id="item">
+                <label for="">Salário </label> <input type="text" id="txt_salario"  autofocus>
+            </div>
+            <div id="item">
+                <label for="">Valor da casa </label> <input type="text" id="txt_valor_casa">
+            </div>
+            <div id="item">
+                <label for="">Parcelas</label> <input type="number" id="txt_parcelas" max="50">
+            </div>
+            <div id="item">
+                <input type="button" value="calcular" id="z" onclick="calcular()">
+            </div>
+            <div id="a" class="mostrar"></div>
+        </div>
+
+    </div>
+
+    <script src="../js/emprestimo.js"></script>
+</body>
+</html>
