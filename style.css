@@ -61,7 +61,7 @@ header a:hover
 {
 
     min-width: 318px;
-    max-width: 700px;
+    max-width: 920px;
 
     min-height: 400px;
     max-height: 100%;
@@ -423,26 +423,66 @@ aside
 
 .cardOpt
 {
-    /* background-color: blue; */
-    width: 210px;
-    height: 320px;
+    /* background-color: rgba(0, 0, 255, 0.37); */
+    /* width: 210px;
+    height: 320px; */
+    width: 280px;
+    height: 380px;
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+
+    background-color: var(--cor3);
+    border-radius: 15px ;
+    border: 1px solid transparent;
 }
+
+.cardOpt:hover, input[type="button"]:focus ~ .cardOpt
+{
+    /* border: 1px solid black; */
+    outline: 1px solid black;
+    cursor: default;
+}
+
+
 
 .cardOpt h2 
 {
+    /* background-color: rgba(255, 0, 0, 0.425); */
     font-size: 1.3em;
-    
+    text-align: center;
+    color: var(--cor4);
+   
 }
 
 .cardOpt p 
 {
-    /* background-color: green; */
+    background-color: var(--cor5);
+    border-radius: 5px;
+    padding: 10px;
     height: 50%;
     margin: 0px 10px;
-    font-size: 0.8em;
+    color: var();
+    font-size: 0.9em;
+}
+
+.cardOpt input[type="button"]
+{
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.8;
+    width: 70px;
+    transition: 0.2s linear;
+}
+
+.cardOpt input[type="button"]:hover 
+{
+    opacity: 1;
+    transform: scale(1.01);
+    cursor: pointer;
 }
