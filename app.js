@@ -3,3 +3,7 @@
 // npm install mysql2 
 // npm install sequelize
 
+Kadjaidjjsadoijsdijad
+paodjoisaja
+isjdoisajd
+aoidjaoisd
