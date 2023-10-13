@@ -24,3 +24,16 @@ aplicacao.set('view engine', 'ejs')
 aplicacao.listen(3000, function(req,res) {
     console.log("Servidor aberto")
 })
+
+
+aplicacao.post("/freTabela", function(req,res) {
+    // console.log("AOIDHIUOASHDOIUSOPADHAPIDH");
+    var x=6;
+    var fi = [req.body.valor1,req.body.valor2,req.body.valor3,req.body.valor4,req.body.valor5,req.body.valor6]
+    console.log(fi)
+    
+
+
+
+    res.render("../views/math/frequencia.ejs", {x:x, fi:fi})
+})

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de Frequência</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabela.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -16,34 +17,44 @@
         </header>
         
     <div class="conteudo">
-        <div id="tabela">
-        
-            <div id="xi" class="elemento"></div>
-            <div id="fi" class="elemento"></div>
-            <div id="facum" class="elemento"></div>
-            <div id="frel" class="elemento"></div>
-            <div id="frel_acum" class="elemento"></div>
-        
-        </div>
+        <fieldset>
+            <legend>Escolha os valores</legend>
+            <form action="/freTabela" method="post">
+                <label for="">Nao sei oq caralho</label>
+
+                <input type="number" name="valor1" id="valor1">
+                <input type="number" name="valor2" id="valor2">
+                <input type="number" name="valor3" id="valor3">
+                <input type="number" name="valor4" id="valor4">
+                <input type="number" name="valor5" id="valor5">
+                <input type="number" name="valor6" id="valor6">
+
+                <input type="submit" value="Gerar">
+            </form>
+        </fieldset>
+        <table id="tabela">
+            <tr>
+                <td>xi</td>
+                <td>fi</td>
+                <td>facum</td>
+                <td>frel</td>
+                <td>frel_acum</td>
+            </tr>
+ 
+            <%for(i=0;i< x ;i++){%>
+                <tr>
+                    <td><%=i+1%></td>
+                    <td><%=fi[i]%></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <%};%>
+        </table>
     </div>
 
-    <table id="tabela">
-        <tr>
-            <td>xi</td>
-            <td>f1</td>
-            <td>facum</td>
-            <td>frel</td>
-            <td>frel_acum</td>
-        </tr>
-        <tr>
-            <td id="xi"></td>
-            <td>f1</td>
-            <td>facum</td>
-            <td>frel</td>
-            <td>frel_acum</td>
-        </tr>
-    </table>
 
-        <script src="../js/tabela_frequencia.js"></script>
+
+        <!-- <script src="../js/tabela_frequencia.js"></script> -->
 </body>
 </html>

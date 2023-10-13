@@ -103,33 +103,6 @@ article
     padding-top: 10px;
 }
 
-#info table
-{
-
-    margin: 10px auto;
-    /* border: solid black 1px; */
-    border-collapse: collapse;
-}
-
-
-#info table tr
-{
-    text-align: center;
-    background-color: red   ;
-    margin: 2px;
-}
-
-#info table td
-{
-    border: solid black 1px;
-    padding: 10px;
-}
-
-thead
-{
-    background-color: red;
-}
-
 .conteudo ul 
 {
     
@@ -157,17 +130,6 @@ aside
 }
 
 
-#tabela
-{
-    margin: 50px auto;
-    border-style: solid ;
-    border-color: black;
-    border-width: 1px;
-    
-    display: flex;
-    min-width: 445px;
-    text-align: center;
-}
 
 #caixa
 {
@@ -489,29 +451,4 @@ aside
 }
 
 
-table
-{
-    margin: auto;
-    border-collapse: collapse;
-}
-
-tr:first-child
-{
-    background-color: rgb(214, 214, 214) ;
-}
-
-tr:first-child td 
-{
-    font-weight: bold;
-    font-size: 1.1em;
-    background-color: rgb(214, 214, 214)
-}
-
-td
-{
-    border: 1px solid black;
-    padding: 10px;
-    font-weight: 1em; 
-    background-color: white;
-}
 

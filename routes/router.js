@@ -6,8 +6,11 @@ router.get('/', function(req,res) {
     res.render('../views/index.ejs')
 });
 
+
+var x;
+var fi =[];
 router.get('/tabelaFuncao', function(req,res) {
-    res.render('../views/math/frequencia.ejs')
+    res.render('../views/math/frequencia.ejs', {x : x, fi:fi})
 });
 
 router.get('/calculadora', function(req,res) {
