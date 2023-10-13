@@ -14,24 +14,24 @@ var acumula_frel = 0;
 var a = "";
 
 
-// window.alert("Esta tabela foi projetado baseado em um dado de 6 lados, logo ele so pode estar correto se seus dados forem baseados do XI de 1 a 6.")
+window.alert("Esta tabela foi projetado baseado em um dado de 6 lados, logo ele so pode estar correto se seus dados forem baseados do XI de 1 a 6.")
 
 
-// for(i=0; i<=10; i++)
-// {
-//     caso = window.prompt('Valor inválido, digite novamente (s/n): ')
-//     if (caso == 's')
-//     {
-//         break;
-//     }
+for(i=0; i<=10; i++)
+{
+    caso = window.prompt('Valor inválido, digite novamente (s/n): ')
+    if (caso == 's')
+    {
+        break;
+    }
 
-//     if (caso == 'n')
-//     {
-//         break;
-//     }
-//     i--;
-// }
-caso = "n"
+    if (caso == 'n')
+    {
+        break;
+    }
+    i--;
+}
+
 if (caso == "s")
 {
 
@@ -99,8 +99,3 @@ document.getElementById('frel_acum').innerHTML = escreva_frel_acum;
 
 
 document.getElementById('valores').innerHTML = a;
-
-
-var tabela = document.getElementById("tabela");
-
-tabela.innerHTML = "<tr><td><td><td></tr>"

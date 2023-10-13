@@ -107,14 +107,15 @@ article
 {
 
     margin: 10px auto;
-    border: solid black 1px;
+    /* border: solid black 1px; */
+    border-collapse: collapse;
 }
 
 
 #info table tr
 {
     text-align: center;
-    
+    background-color: red   ;
     margin: 2px;
 }
 
@@ -486,3 +487,31 @@ aside
     transform: scale(1.01);
     cursor: pointer;
 }
+
+
+table
+{
+    margin: auto;
+    border-collapse: collapse;
+}
+
+tr:first-child
+{
+    background-color: rgb(214, 214, 214) ;
+}
+
+tr:first-child td 
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: rgb(214, 214, 214)
+}
+
+td
+{
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: 1em; 
+    background-color: white;
+}
+
