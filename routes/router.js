@@ -9,8 +9,11 @@ router.get('/', function(req,res) {
 
 var x;
 var fi =[];
+var facum =[];
+var frel = [];
+var frelAcum = [];
 router.get('/tabelaFuncao', function(req,res) {
-    res.render('../views/math/frequencia.ejs', {x : x, fi:fi})
+    res.render('../views/math/frequencia.ejs', {x : x, fi:fi, facum:facum, frel:frel, frelAcum:frelAcum})
 });
 
 router.get('/calculadora', function(req,res) {

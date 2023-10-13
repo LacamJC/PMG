@@ -20,7 +20,7 @@
         <fieldset>
             <legend>Escolha os valores</legend>
             <form action="/freTabela" method="post">
-                <label for="">Nao sei oq caralho</label>
+                <label for="">Valores'</label>
 
                 <input type="number" name="valor1" id="valor1">
                 <input type="number" name="valor2" id="valor2">
@@ -45,9 +45,9 @@
                 <tr>
                     <td><%=i+1%></td>
                     <td><%=fi[i]%></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><%=facum[i]%></td>
+                    <td>%<%=frel[i]%></td>
+                    <td>%<%=frelAcum[i]%></td>
                 </tr>
                 <%};%>
         </table>
