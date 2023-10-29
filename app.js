@@ -2,7 +2,7 @@
 // npm install ejs 
 // npm install mysql2 
 // npm install sequelize
-
+//So testando
 var express = require('express')
 
 var aplicacao = express()
