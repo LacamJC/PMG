@@ -22,10 +22,6 @@ aplicacao.use(express.static(__dirname + '/public'))
 
 aplicacao.set('view engine', 'ejs')
 
-aplicacao.listen(3000, function(req,res) {
-    console.log("Servidor aberto")
-})
-
 
 aplicacao.post("/freTabela", function(req,res) {
     // console.log("AOIDHIUOASHDOIUSOPADHAPIDH");
@@ -60,4 +56,11 @@ aplicacao.post("/freTabela", function(req,res) {
 
 
     res.render("../views/math/frequencia.ejs", {x:x, fi:fi, facum:facum, frel:frel, frelAcum:frelAcum})
+})
+
+const port = process.env.PORT || 3000;
+
+
+aplicacao.listen(port, "0.0.0.0", function(req,res) {
+    console.log("Servidor aberto")
 })
