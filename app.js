@@ -15,7 +15,7 @@ aplicacao.use(express.json())
 
 aplicacao.use('/', rotas)
 
-aplicacao.use(bodyParser.urlencoded({extendend:false}))
+aplicacao.use(bodyParser.urlencoded({extendend:true}))
 
 aplicacao.use(express.static(__dirname + '/public'))
 
