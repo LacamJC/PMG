@@ -14,7 +14,7 @@ const bodyParser = require('body-parser')
 aplicacao.use(express.json())
 
 aplicacao.use('/', rotas)
-
+//So de sacas
 aplicacao.use(bodyParser.urlencoded({extendend:false}))
 
 aplicacao.use(express.static(__dirname + '/public'))
