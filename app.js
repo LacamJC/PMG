@@ -14,16 +14,14 @@ const bodyParser = require('body-parser')
 aplicacao.use(express.json())
 
 aplicacao.use('/', rotas)
+
 //So de sacas
 aplicacao.use(bodyParser.urlencoded({extendend:false}))
+
 
 aplicacao.use(express.static(__dirname + '/public'))
 
 aplicacao.set('view engine', 'ejs')
-
-aplicacao.listen(3000, function(req,res) {
-    console.log("Servidor aberto")
-})
 
 
 aplicacao.post("/freTabela", function(req,res) {
@@ -59,4 +57,10 @@ aplicacao.post("/freTabela", function(req,res) {
 
 
     res.render("../views/math/frequencia.ejs", {x:x, fi:fi, facum:facum, frel:frel, frelAcum:frelAcum})
+})
+
+
+
+aplicacao.listen(3000, function(req,res) {
+    console.log("Servidor aberto")
 })
