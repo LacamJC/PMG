@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento Salarial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Aumento Salarial</h1>
+        <a href="/">home</a>
+    </header>
+    <div class="conteudo">
+
+
+
+        <main class="m-auto mx-5 my-5 row">
+            <div class="mb-3 col-12 col-md-4">
+                <label for="SalarioFuncionario" class="form-label">Salario atual</label>
+                <input type="text" class="form-control" id="SalarioFuncionario" value="R$ ">
+                <div id="emailHelp" class="form-text">Coloque o salario atual do funcionario</div>
+            </div>
+
+            <div class="mb-3 col-12 col-md-4">
+                <label for="Aumento">Aumento em %</label>
+                <input type="text" id="Aumento" class="form-control" value="% ">
+                <div class="form-text">Aumento em % ex(25, 50, 100)</div>
+            </div>
+            <div class="mb-3 col-4 ">
+                <label for="">Resultado</label>
+                <input type="text" name="" id="resultado" readonly class="form-control">
+            </div>
+
+            <div class="mb-3 col-12 ">
+                <input type="button" value="Calcular" class="btn btn-primary m-auto" onclick="calcular()">
+            </div>
+
+        
+        </main>
+
+    </div>
+
+
+    <script src="../js/aumento.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  
+</body>
+</html>
