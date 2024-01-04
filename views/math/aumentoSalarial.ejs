@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aumento Salarial</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -20,7 +21,53 @@
             <div id="aumento" class="elemento"></div>
             <div id="salario_final" class="elemento"></div>
         </div>
+
+
+        <div class="mb-3 w-75 m-auto">
+            <p>Informe quantos funcionarios irao receber aumento</p>
+            <label for="NumeroFuncionarios">Funcionarios</label>
+            <input type="text" name="" id="NumeroFuncionarios" class="form-control mb-3">
+            <input type="button" value="Gerar" onclick="gerar()" class="btn btn-primary">
+        </div>
+
+
+    <form action="/aumentoSalarial" method="post" class="form w-50 bd-danger m-auto">
+        <div id="campos" class="row"></div>
+    </form>
     </div>
-    <script src="../js/aumento.js"></script>
+
+
+    <!-- <script src="../js/aumento.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script>
+var controle = 0;
+
+    function gerar() {
+        var NumeroFuncionarios = Number(document.getElementById("NumeroFuncionarios").value);
+        var campos = document.getElementById("campos");
+
+        campos.innerHTML = '';
+
+        for (let i = 0; i < NumeroFuncionarios; i++) {
+            console.log(i);
+            if (i === 0) {
+                campos.innerHTML += '<h4 class="text-center mb-3">Quanto o funcionário recebe</h4>';
+            }
+            campos.innerHTML += `<div class="mb-3 col col-6 m-auto">
+                                    <label for="FuncionarioCampo${i+1}" class="form-label"> Funcionário ${i+1}</label>
+                                    <input type="text" name="FuncionarioCampo${i+1}" id="FuncionarioCampo${i+1}" class="form-control">
+                                </div>`;
+        }
+
+        console.log(NumeroFuncionarios);
+        console.log(typeof(NumeroFuncionarios));
+
+        // Adicionando ouvinte de eventos após a criação dos campos
+
+    }
+
+    </script>
 </body>
 </html>
