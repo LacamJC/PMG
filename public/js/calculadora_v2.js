@@ -58,7 +58,7 @@ function multiplicacao()
     var resultado;
     resultado = n1 * n2 
 
-    document.getElementById('resultado_2').innerHTML = resultado;
+    document.getElementById('resultado_2').innerHTML = resultado.toFixed(2);
 }
 
 function divisao()
@@ -72,6 +72,6 @@ function divisao()
 
     resultado = n1 / n2;
 
-    document.getElementById('resultado_3').innerHTML = resultado
+    document.getElementById('resultado_3').innerHTML = resultado.toFixed(2)
 
 }

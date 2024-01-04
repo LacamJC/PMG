@@ -20,14 +20,14 @@
             <div id="operacao" class="bg-success-subtle">
                 <input type="text" id="txt_n1" class="numero">
                 <div id="soma" class="numero"></div>
-                <input type="text" id="txt_n2" class="numero">
+                <input type="text" id="txt_n2" class="numero" onblur="soma()">
                 <input type="button" value="=" onclick="soma()" class="numero">
                 <div id="resultado" class="numero"></div>
             </div>
             <div id="operacao" class="bg-success-subtle">
                 <input type="text" id="txt_n1_1" class="numero">
                 <div id="subtracao" class="numero"></div>
-                <input type="text" id="txt_n2_1" class="numero">
+                <input type="text" id="txt_n2_1" class="numero" onblur="subtracao()">
                 <input type="button" value="=" onclick="subtracao()" class="numero">
                 <div id="resultado_1" class="numero"></div>
             </div>
@@ -35,7 +35,7 @@
             <div id="operacao" class="bg-success-subtle">
                 <input type="text" id="txt_n1_2" class="numero">
                 <div id="multiplicacao" class="numero"></div>
-                <input type="text" id="txt_n2_2" class="numero">
+                <input type="text" id="txt_n2_2" class="numero" onblur="multiplicacao()">
                 <input type="button" value="=" onclick="multiplicacao()" class="numero">
                 <div id="resultado_2" class="numero"></div>
             </div>
@@ -43,7 +43,7 @@
             <div id="operacao" class="bg-success-subtle">
                 <input type="text" id="txt_n1_3" class="numero">
                 <div id="divisao" class="numero"></div>
-                <input type="text" id="txt_n2_3" class="numero">
+                <input type="text" id="txt_n2_3" class="numero" onblur="divisao()">
                 <input type="button" value="=" onclick="divisao()" class="numero">
                 <div id="resultado_3" class="numero"></div>
             </div>

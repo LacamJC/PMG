@@ -13,12 +13,13 @@ function calcular()
     
     if (min_salario >= parcela_casa)
     {
-        document.getElementById('a').innerHTML = "Você pode comprar esta casa <br>Cada parcela custará R$: "+parcela_casa.toFixed(2)+"<br>Por "+parcelas+" meses"
+        document.getElementById('a').innerHTML = "<p class='alert alert-primary'>Você pode comprar esta casa <br>Cada parcela custará R$: "+parcela_casa.toFixed(2)+"<br>Por "+parcelas+" meses<p>"
     }
 
     else 
     {
-        document.getElementById('a').innerHTML = "Você não pode comprar esta casa.<br>Cada parcela ficara R$: "+parcela_casa+"<br>E representa mais de 30% de seu salário logo nao podera pagar."
+        document.getElementById('a').innerHTML = "<p class='alert alert-danger'>Você não pode comprar esta casa.<br>Cada parcela ficara R$: "+parcela_casa+"<br>E representa mais de 30% de seu salário logo nao podera pagar.<p>"
+
     }
 
 
